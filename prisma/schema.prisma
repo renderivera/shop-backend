@@ -15,8 +15,9 @@ model Product {
   title       String
   description String?
   price       Float
+  featured    Boolean?
   categories  Category[]
-  images      Image[]
+  images      Image[]  
 }
 
 model Category {

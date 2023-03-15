@@ -10,6 +10,7 @@ async function main() {
 			title: "Yogamatters Racerback Tank Top - Black",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
+			featured: true,
 			images: {
 				create: [
 					{
@@ -82,6 +83,7 @@ async function main() {
 			title: "Yogamatters Eco Blend Second-Skin Leggings - Black",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
+			featured: true,
 			images: {
 				create: [
 					{
@@ -154,6 +156,7 @@ async function main() {
 			title: "Yogamatters Hemp Buckwheat Bolster - Natural",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
+			featured: true,
 			images: {
 				create: [
 					{
@@ -220,6 +223,7 @@ async function main() {
 			},
 		},
 	});
+
 	const topsCat = await prisma.category.create({
 		data: {
 			name: "tops",
@@ -261,20 +265,6 @@ async function main() {
 			},
 			products: {
 				connect: [{ id: equ1.id }, { id: equ2.id }, { id: equ3.id }],
-			},
-		},
-	});
-	const featCat = await prisma.category.create({
-		data: {
-			name: "featured products",
-			image: {
-				create: {
-					alt: "featured products",
-					url: "https://cdn.shopify.com/s/files/1/0278/7259/1939/products/Yogamatters-Natural-Dyes-August-20222256_300x300.jpg?v=1663170643",
-				},
-			},
-			products: {
-				connect: [{ id: top1.id }, { id: pants1.id }, { id: equ1.id }],
 			},
 		},
 	});

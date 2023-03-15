@@ -1,17 +1,28 @@
 import express from "express";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Category, Product, Image } from "@prisma/client";
+import cors from "cors";
 
 const prisma = new PrismaClient();
 const app = express();
 const port = 3000;
+app.use(cors({ origin: "http://localhost:5173" }), express.json());
+
+let p: (Product & { images: Image[] })[];
+let c: (Category & { image: Image })[];
 
 app.get("/categories", async (req, res) => {
-	const categories = await prisma.category.findMany({});
-	res.json(categories);
+	if (!c)
+		c = await prisma.category.findMany({
+			include: { image: true },
+		});
+	res.json(c);
 });
 app.get("/products", async (req, res) => {
-	const products = await prisma.product.findMany({});
-	res.json(products);
+	if (!p)
+		p = await prisma.product.findMany({
+			include: { images: true, categories: true },
+		});
+	res.json(p);
 });
 
 const server = app.listen(port, () =>
