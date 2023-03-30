@@ -7,7 +7,7 @@ require("dotenv").config();
 const prisma = new PrismaClient();
 const app = express();
 const port = 3000;
-app.use(cors({ origin: "http://localhost:5173" }), express.json());
+app.use(cors({ origin: process.env.CLIENT_URL }), express.json());
 
 const stripe = new Stripe(process.env.STRIPE_SK as string, {
 	apiVersion: "2022-11-15",
@@ -66,8 +66,8 @@ app.post("/create-checkout-session", async (req, res) => {
 	const session = await stripe.checkout.sessions.create({
 		line_items: cartLineItems,
 		mode: "payment",
-		success_url: "http://localhost:5173/order/success",
-		cancel_url: "http://localhost:5173/order/cancel",
+		success_url: `${process.env.CLIENT_URL}/order/success`,
+		cancel_url: `${process.env.CLIENT_URL}/order/cancel`,
 	});
 
 	res.json({ url: session.url });
