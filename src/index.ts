@@ -6,9 +6,9 @@ require("dotenv").config();
 
 const prisma = new PrismaClient();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(cors({ origin: process.env.CLIENT_URL }), express.json());
+app.use(cors({ origin: process.env.CLIENT_URL }));
 
 const stripe = new Stripe(process.env.STRIPE_SK as string, {
 	apiVersion: "2022-11-15",
