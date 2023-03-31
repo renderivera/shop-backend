@@ -1,14 +1,12 @@
 import express from "express";
 import { PrismaClient, Category, Product, Image } from "@prisma/client";
-import cors from "cors";
+const cors = require("cors");
 import { Stripe } from "stripe";
 require("dotenv").config();
 
 const prisma = new PrismaClient();
 const app = express();
 const port = 3000;
-
-console.log(process.env.CLIENT_URL);
 
 app.use(cors({ origin: process.env.CLIENT_URL }), express.json());
 
