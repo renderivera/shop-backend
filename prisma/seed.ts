@@ -11,7 +11,7 @@ async function main() {
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
 			featured: true,
-			stripeId: "price_1Mr11vH6Wi5WdNI8Mbfr4KAj",
+			// stripeId: "price_1Mr11vH6Wi5WdNI8Mbfr4KAj",
 			images: {
 				create: [
 					{
@@ -36,7 +36,7 @@ async function main() {
 			title: "Gossypium Freedom Yoga Vest - Orange",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr16QH6Wi5WdNI8wMPdjLnT",
+			// stripeId: "price_1Mr16QH6Wi5WdNI8wMPdjLnT",
 			images: {
 				create: [
 					{
@@ -61,7 +61,7 @@ async function main() {
 			title: "Yogamatters Crop Top - Lilac",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr17cH6Wi5WdNI8YYjZbvSf",
+			// stripeId: "price_1Mr17cH6Wi5WdNI8YYjZbvSf",
 			images: {
 				create: [
 					{
@@ -87,7 +87,7 @@ async function main() {
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
 			featured: true,
-			stripeId: "price_1Mr18pH6Wi5WdNI8IkjbDz08",
+			// stripeId: "price_1Mr18pH6Wi5WdNI8IkjbDz08",
 			images: {
 				create: [
 					{
@@ -112,7 +112,7 @@ async function main() {
 			title: "Girlfriend Collective Luxe Legging - Bordeaux",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr1BRH6Wi5WdNI8abTDXwD3",
+			// stripeId: "price_1Mr1BRH6Wi5WdNI8abTDXwD3",
 			images: {
 				create: [
 					{
@@ -137,7 +137,7 @@ async function main() {
 			title: "Gossypium Aspire Harem Pants",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr1C9H6Wi5WdNI8MmhW6pZc",
+			// stripeId: "price_1Mr1C9H6Wi5WdNI8MmhW6pZc",
 			images: {
 				create: [
 					{
@@ -163,7 +163,7 @@ async function main() {
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
 			featured: true,
-			stripeId: "price_1Mr1CoH6Wi5WdNI8DggpXZ14",
+			// stripeId: "price_1Mr1CoH6Wi5WdNI8DggpXZ14",
 			images: {
 				create: [
 					{
@@ -188,7 +188,7 @@ async function main() {
 			title: "Yogamatters Cork Block",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr1DcH6Wi5WdNI88Y83or6p",
+			// stripeId: "price_1Mr1DcH6Wi5WdNI88Y83or6p",
 			images: {
 				create: [
 					{
@@ -213,7 +213,7 @@ async function main() {
 			title: "Yogamatters Organic Cotton D-ring Yoga Belt",
 			description: `Introducing our new, practical racerback tank top that provides support through any practice. Made from a sumptuously soft blend of organically grown cotton and Tencel™ Modal, it’s the perfect combination of function and comfort. Great for layering under loose and low-cut tops or wearing as it is, our racerback has a high crew neckline that keeps you covered where you want to be, whatever the asana.`,
 			price: 29.99,
-			stripeId: "price_1Mr1EEH6Wi5WdNI8XiXEQ2Jr",
+			// stripeId: "price_1Mr1EEH6Wi5WdNI8XiXEQ2Jr",
 			images: {
 				create: [
 					{
